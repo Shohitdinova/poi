@@ -1,4 +1,4 @@
-package com.example.poi.exsel;
+package com.example.poi.exsel.write;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
@@ -42,9 +42,7 @@ public class Exsel {
          } catch (IOException e) {
              e.printStackTrace();
          }
-
          scanner.close();
-
          System.out.println("Matnlar muvaffaqiyatli yozildi va fayl saqlandi.");
 
      }
