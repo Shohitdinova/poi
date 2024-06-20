@@ -1,4 +1,4 @@
-package com.example.poi.word;
+package com.example.poi.word.write;
 
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFParagraph;
@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.List;
 
 @Service
-public class WordService {
+public class Word {
 
     public static void createWordDocumentAndSaveToFile(List<String> texts) {
         try (XWPFDocument document = new XWPFDocument();
