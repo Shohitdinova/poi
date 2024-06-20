@@ -1,0 +1,3 @@
+#set($docsContent = $content)
+Dokumentning tarkibi:
+$docsContent

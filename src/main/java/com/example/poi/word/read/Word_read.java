@@ -13,7 +13,6 @@ public class Word_read {
         try (FileInputStream fis = new FileInputStream(filePath);
              XWPFDocument document = new XWPFDocument(fis)) {
 
-            // Word faylidagi barcha matnlarni oqish va konsolga chiqarish
             System.out.println("============  Matn:  =================");
             for (XWPFParagraph paragraph : document.getParagraphs()) {
                 String text = paragraph.getText();
@@ -24,4 +23,21 @@ public class Word_read {
         }
 
 
-    }}
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+

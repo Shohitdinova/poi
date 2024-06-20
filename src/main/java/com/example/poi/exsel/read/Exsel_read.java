@@ -2,8 +2,6 @@ package com.example.poi.exsel.read;
 
 import org.apache.poi.ss.usermodel.*;
 import org.springframework.stereotype.Service;
-
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
@@ -15,7 +13,7 @@ public class Exsel_read {
 
             Sheet sheet = workbook.getSheetAt(0);
 
-            System.out.println("Ma'lumotlar:");
+            System.out.println("======== Ma'lumotlar =======");
             for (Row row : sheet) {
                 for (Cell cell : row) {
                     switch (cell.getCellType()) {
@@ -35,7 +33,7 @@ public class Exsel_read {
                             System.out.print("<UNKNOWN>\t");
                     }
                 }
-                System.out.println(); // Qatorni yakunlash
+                System.out.println();
             }
         }
     }
