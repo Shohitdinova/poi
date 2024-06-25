@@ -1,0 +1,23 @@
+
+##      exceldan oqish
+###foreach ($row in $data)
+##    #foreach ($cell in $row)
+##        #if ($cell != "") $cell #else "" #end
+##    #end
+##
+###end
+
+
+
+#foreach ($row in $data)
+    #foreach ($cell in $row)
+        #if ($cell != "") $cell #else "" #end
+    #end
+\n
+#end
+
+
+
+
+
+
